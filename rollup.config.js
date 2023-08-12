@@ -33,7 +33,7 @@ export default {
     input: 'src/embed.js',
     output: {
         format: 'iife',
-        file: 'dist.js',
+        file: 'public/dist.js',
         sourcemap: false,
     },
     plugins: [
@@ -64,7 +64,7 @@ export default {
         // Watch the `public` directory and refresh the
         // browser on changes when not in production
         !production && livereload(),
-        
+
         // If we're building for production (npm run build
         // instead of npm run dev), minify
         production && terser()

@@ -8,6 +8,14 @@
 
 <style lang="less">
 
+  .main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
 </style>
 
-<Heading {...props}/>
+<div class='main'>
+    <Heading {...props}/>
+</div>
