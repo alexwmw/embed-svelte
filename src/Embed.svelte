@@ -1,21 +1,11 @@
 <script>
-    import Heading from "./Heading.svelte";
-
-    let props = {
-        name: 'Alex'
-    }
+    import FlippableItem from "./FlippableItem/FlippableItem.svelte";
+    import ResponsiveGrid from "./ResponsiveGrid/ResponsiveGrid.svelte";
 </script>
 
-<style lang="less">
-
-  .main {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
-
-</style>
-
 <div class='main'>
-    <Heading {...props}/>
+    <ResponsiveGrid>
+        <FlippableItem/>
+        <FlippableItem frontText="Hi" backText="bye"/>
+    </ResponsiveGrid>
 </div>
