@@ -31,9 +31,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.75);
 
-    backdrop-filter: blur(5px) saturate(0.5);
 
     display: flex;
     flex-direction: column;
@@ -41,31 +39,14 @@
     justify-content: center;
     align-items: center;
 
-    * {
-      text-align: center;
-    }
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(5px) saturate(0.5);
   }
 
   .content {
     max-width: 600px;
   }
-
-  #lecture_content_complete_button_wrapper {
-    width: 100%;
-    margin-block: 50px;
-  }
-
-  #lecture_content_complete_button {
-    padding: 0;
-    display: flex;
-    justify-content: right;
-    width: 100%;
-  }
-
-  #lecture_content_complete_button .button_container {
-
-  }
-
 </style>
 
 <div class='HideAndWarn'>
