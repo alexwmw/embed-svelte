@@ -1,0 +1,24 @@
+.applyAbove(@ruleset; @min-width; @containerName: main; ) {
+  @container @containerName(min-width: @min-width) {
+    @ruleset();
+  }
+}
+
+.applyBelow(@ruleset; @max-width; @containerName: main; ) {
+  @offset: 0.25px;
+  @container @containerName(max-width: calc(@max-width - @offset)) {
+    @ruleset();
+  }
+}
+
+.on() {
+  .mobileOnly(@ruleset) {
+    .applyBelow(@ruleset; 400px;);
+  }
+  .tablet(@ruleset) {
+    .applyAbove(@ruleset; 400px;);
+  }
+  .desktop(@ruleset) {
+    .applyAbove(@ruleset; 690px;);
+  }
+}
